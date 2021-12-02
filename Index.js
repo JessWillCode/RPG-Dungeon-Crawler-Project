@@ -1195,14 +1195,14 @@ function printLetterByLetter(destination, message){ //message = variable
     }, 70);
 }
 
-function gameStart(){
+function storyStart(){
     text.innerHTML = null;
     printLetterByLetter("charInput", storyArray[0]);
     storyArray.shift();
 };
 
 
-nextButton.addEventListener("click", gameStart);
+nextButton.addEventListener("click", storyStart);
 
 const nameInput = document.querySelector('pName');
 
